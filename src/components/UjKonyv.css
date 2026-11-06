@@ -1,0 +1,76 @@
+.konyv-urlap {
+  margin: 0 0 24px;
+  padding: 18px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: #101c2e;
+  color: var(--text-h);
+  text-align: left;
+}
+
+.urlap-mezok {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.urlap-mezo {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.urlap-mezo label {
+  font-size: 0.85rem;
+  color: var(--text);
+}
+
+.urlap-mezo input {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 38px;
+  padding: 7px 9px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: #0b1424;
+  color: var(--text-h);
+  font: inherit;
+}
+
+.urlap-mezo input:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+.urlap-gomb {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 14px;
+}
+
+.urlap-gomb button {
+  padding: 8px 13px;
+  border: 1px solid #45658c;
+  border-radius: 4px;
+  background: #203b5c;
+  color: #edf4ff;
+  font: inherit;
+  cursor: pointer;
+}
+
+.urlap-gomb button:hover {
+  background: #294b72;
+}
+
+@media (max-width: 720px) {
+  .urlap-mezok {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 420px) {
+  .urlap-mezok {
+    grid-template-columns: 1fr;
+  }
+}
